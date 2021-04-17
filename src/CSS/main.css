@@ -1,0 +1,17 @@
+.center-text{
+    padding-top: 25% !important;
+    white-space: nowrap;
+}
+
+.center {
+    padding-top: 10% !important;   
+}
+
+.main {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 15vh;
+    overflow-y: scroll;
+}
+.background div{
+    scroll-snap-align: center;
+}
