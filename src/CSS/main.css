@@ -1,17 +1,22 @@
 .center-text{
     padding-top: 25% !important;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .center {
     padding-top: 10% !important;   
 }
 
-.main {
-    scroll-snap-type: y mandatory;
-    scroll-padding-top: 15vh;
-    overflow-y: scroll;
+.main div{
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 10vh;
 }
-.background div{
+.background{
     scroll-snap-align: center;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
