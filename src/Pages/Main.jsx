@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import homebackground from "../backgrounds/1.svg";
-import homebackground2 from "../backgrounds/2.svg";
+import profile from "../backgrounds/avatar.jpeg";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Slide from "@material-ui/core/Slide";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
+import navbar from "../components/navbar"
+import { Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,18 +20,16 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "#EC008C",
     fontFamily: "Ubuntu",
-    background: "hsla(355.3846153846154, 100%, 97.45098039215686%, 0.89)",
+    background: "#FFF2F3",
     margin: "auto",
-
   },
   paperbodydetail: {
     padding: theme.spacing(2),
     textAlign: "left",
     color: "#EC008C",
     fontFamily: "Ubuntu",
-    background: "hsla(355.3846153846154, 100%, 97.45098039215686%, 0.89)",
     margin: "auto",
-
+    background: "#FFF2F3",
   },
   papertitle: {
     padding: theme.spacing(2),
@@ -38,10 +38,12 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Oswald",
     fontSize: "60px",
     margin: "auto",
+    background: "#FFF2F3",
   },
   large: {
     width: theme.spacing(20),
     height: theme.spacing(20),
+    margin: "auto"
   },
 }));
 
@@ -56,7 +58,7 @@ const Home = () => {
           style={{
             backgroundImage: `url(${homebackground})`,
             backgroundRepeat: "no-repeat",
-            height: "100vh",
+            height: "300vh",
             backgroundSize: "cover",
             position: "relative",
             overflow: "scroll",
@@ -66,7 +68,7 @@ const Home = () => {
             <Grid container justify="center" spacing={3}>
               <Grid item xs={12} sm={7}>
                 <Slide direction="right" in={true} timeout={800}>
-                  <Paper className={classes.papertitle}>ZACHARY GOULD</Paper>
+                  <Paper className={classes.papertitle}>ZACHARY GOULD<Avatar className={classes.large} src={profile}></Avatar></Paper>
                 </Slide>
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -78,18 +80,8 @@ const Home = () => {
               </Grid>
             </Grid>
           </div>
-        </div>
-        <div
-          className="background"
-          style={{
-            backgroundImage: `url(${homebackground2})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            height: "100vh",
-            backgroundSize: "cover",
-            overflow: "scroll",
-          }}
-        >
+        
+       
           <div className={`center ${classes.root}`}>
             <Grid container justify="center" spacing={3}>
               <Grid item xs={12} sm={7}>
@@ -132,17 +124,7 @@ const Home = () => {
               </Grid>
             </Grid>
           </div>
-        </div>
-        <div
-          className="background"
-          style={{
-            backgroundImage: `url(${homebackground})`,
-            backgroundRepeat: "no-repeat",
-            height: "100vh",
-            backgroundSize: "cover",
-            overflow: "scroll",
-          }}
-        >
+
           <div className={`center ${classes.root}`}>
             <Grid container justify="center" spacing={3}>
               <Grid item xs={12} sm={7}>
@@ -150,6 +132,21 @@ const Home = () => {
               </Grid>
 
               <Grid container justify="center" spacing={3}>
+                <Grid item xs={12} sm={3}>
+                  <Paper className={classes.paperbody}>
+                    <h1>EDUCATION</h1>
+                    <ul className="list">
+                      <li>
+                        <h3>UNIVERSITY OF NEW MEXICO</h3> Bachelor's in Spanish
+                        and Media Communications
+                      </li>
+                      <li>
+                        <h3>UNIVERSIDAD DE CONCEPCION</h3> Print and Broadcast
+                        journalism
+                      </li>
+                    </ul>
+                  </Paper>
+                </Grid>
                 <Grid item xs={12} sm={3}>
                   <Paper className={classes.paperbody}>
                     <h1>PROFESSIONAL SKILLS</h1>
@@ -177,21 +174,6 @@ const Home = () => {
                 </Grid>
                 <Grid item xs={12} sm={3}>
                   <Paper className={classes.paperbody}>
-                    <h1>EDUCATION</h1>
-                    <ul className="list">
-                      <li>
-                        <h3>UNIVERSITY OF NEW MEXICO</h3> Bachelor's in Spanish
-                        and Media Communications
-                      </li>
-                      <li>
-                        <h3>UNIVERSIDAD DE CONCEPCION</h3> Print and Broadcast
-                        journalism
-                      </li>
-                    </ul>
-                  </Paper>
-                </Grid>
-                <Grid item xs={12} sm={3}>
-                  <Paper className={classes.paperbody}>
                     <h1>TECHNICAL SKILLS</h1>
                     <ul className="list">
                       <li>
@@ -202,7 +184,7 @@ const Home = () => {
                       <li>CSS</li>
                       <li>HTML</li>
                       <li>Wordpress</li>
-                      <li>Materiul UI, BOOTSTRAP, CSS grid</li>
+                      <li>Materiul UI, BOOTSTRAP, CSS grid... and more</li>
                       <li>
                         <h3>BACKEND</h3>
                       </li>
