@@ -1,0 +1,16 @@
+.MuiAppBar-colorPrimary {
+    background-color: #53bef3a2 !important;
+}
+
+.khamsa {
+    max-width: 100px;
+    transform: rotate(270deg);
+    padding-right: 0;
+}
+
+.nav-list{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+     padding: 0;
+}

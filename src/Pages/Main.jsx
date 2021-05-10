@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import homebackground from "../backgrounds/1.svg";
 import profile from "../backgrounds/avatar.jpeg";
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Slide from "@material-ui/core/Slide";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
-import navbar from "../components/navbar"
+import Navbar from "../components/navbar"
 import { Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(20),
     height: theme.spacing(20),
-    margin: "auto"
+    margin: "auto",
+    alignContent: "center",
   },
 }));
 
@@ -52,6 +53,7 @@ const Home = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="main">
         <div
           className="background"
@@ -128,7 +130,7 @@ const Home = () => {
           <div className={`center ${classes.root}`}>
             <Grid container justify="center" spacing={3}>
               <Grid item xs={12} sm={7}>
-                <Paper className={classes.papertitle}>SUMMARY</Paper>
+                <Paper className={classes.papertitle}>SKILLS</Paper>
               </Grid>
 
               <Grid container justify="center" spacing={3}>
