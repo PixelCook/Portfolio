@@ -130,7 +130,7 @@ const Home = () => {
           <div className={`center ${classes.root}`}>
             <Grid container justify="center" spacing={3}>
               <Grid item xs={12} sm={7}>
-                <Paper className={classes.papertitle}>SKILLS</Paper>
+                <Paper className={classes.papertitle}>gitSKILLS</Paper>
               </Grid>
 
               <Grid container justify="center" spacing={3}>
