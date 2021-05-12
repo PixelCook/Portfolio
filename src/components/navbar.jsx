@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import khamsa from "../backgrounds/khamsa.svg";
 import IconButton from "@material-ui/core/IconButton";
-import { CSSTransition } from "react-transition-group";
+import { HashLink } from "react-router-hash-link";
 import "../CSS/navbar.css";
 
 const mountedStyle = {
@@ -60,15 +60,15 @@ export default function Navbar() {
               }}
             >
               <ul className="nav-list">
-                <a href="#about">
+                <HashLink smooth to={"#about"}>
                   <li>ABOUT ME</li>
-                </a>
-                <a href="#skills">
+                </HashLink>
+                <HashLink smooth to={"#skills"}>
                   <li>SKILLS</li>
-                </a>
-                <a href="#portfolio">
+                </HashLink>
+                <HashLink smooth to={"#portfolio"}>
                   <li>PORTFOLIO</li>
-                </a>
+                </HashLink>
               </ul>
             </div>
           )}
