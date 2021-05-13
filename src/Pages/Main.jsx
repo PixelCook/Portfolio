@@ -9,6 +9,7 @@ import "../CSS/fonts.css";
 import "../CSS/main.css";
 import Navbar from "../components/navbar";
 import { Avatar, Button } from "@material-ui/core";
+import Gridlist from "../components/gridlist"
 
 const mountedStyle = {
   animation: "inAnimation 250ms ease-in",
@@ -111,7 +112,7 @@ const Home = () => {
               <Grid item xs={12} sm={6}>
                 <Slide direction="left" in={true} timeout={800}>
                   <Paper className={classes.paperbody}>
-                    Fullstack Engineer
+                    Fullstack
                   </Paper>
                 </Slide>
               </Grid>
@@ -299,40 +300,7 @@ const Home = () => {
                     }}
                   >
                     <Paper className={classes.paperbodydetail}>
-                      <p>
-                        After 6+ years of building and developing my own company
-                        I have taken the skills and talents that I built in a
-                        production environment and turned my sights on
-                        development.
-                        <br></br>I learned a lot during my years as an owner and
-                        managing partner. How to create a brand and a voice. How
-                        to dive into a complicated technical world and become an
-                        expert in the field. How to stay self-motivated and
-                        organized. How to work under pressure and multi-task,
-                        but most importantly, how to effectively turn creative
-                        ideas into real world solutions.
-                        <br></br>
-                        After managing a team of 15 and making something that
-                        most thought was impossible, I set my vision on my first
-                        passion of working in tech; innovative, efficient, and
-                        captivating.
-                        <br></br>
-                        🔥 As a Full Stack Developer I work to:<br></br>
-                        👾 Create memorable and original products that not only
-                        aesthetically look amazing but are secure and
-                        functionally exceptional<br></br>
-                        👾 Constantly create, produce, and push the envelope on
-                        what can be done in development<br></br>
-                        👾 Participate and promote a developer community,
-                        leaving the world a little more connected than I found
-                        it<br></br>
-                        👉 If you're interested in working with me to help make
-                        your vision a reality email me at{" "}
-                        <a href="mailto:zacharyigould@gmail.com">
-                          zacharyigould@gmail.com
-                        </a>
-                        <br></br>
-                      </p>
+                    <Gridlist/>
                     </Paper>
                   </div>
                 )}
