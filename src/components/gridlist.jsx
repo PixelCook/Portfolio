@@ -1,14 +1,14 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import IconButton from "@material-ui/core/IconButton";
-import InfoIcon from "@material-ui/icons/Info";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import tileData from "../data/tiledata.js";
-import Popover from "@material-ui/core/Popover";
-import Typography from "@material-ui/core/Typography";
+import Tooltip from "@material-ui/core/Tooltip";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,28 +24,22 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: "rgba(255, 255, 255, 0.54)",
-  },
-  popover: {
-    pointerEvents: "none",
-  },
-  paper: {
-    padding: theme.spacing(1),
+    justifyContent: "flex-start",
+    padding: "0 10px",
   },
 }));
 
+const LightTooltip = withStyles((theme) => ({
+  tooltip: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 16,
+  },
+}))(Tooltip);
+
 export default function TitleGridList() {
   const classes = useStyles();
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-
-  const handlePopoverOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <div className={classes.root}>
@@ -54,48 +48,36 @@ export default function TitleGridList() {
           <ListSubheader component="div">Recent Projects</ListSubheader>
         </GridListTile>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              subtitle={<span>About: {tile.about}</span>}
-              actionIcon={
-                <a href={tile.url} target="_blank">
-                  <IconButton
-                    aria-label={`info about ${tile.title}`}
-                    className={classes.icon}
-                  >
-                    <InfoIcon />
-                  </IconButton>
-                </a>
-              }
-              aria-owns={open ? 'mouse-over-popover' : undefined}
-              aria-haspopup="true"
-              onMouseEnter={handlePopoverOpen}
-              onMouseLeave={handlePopoverClose}
-            />
-            <Popover
-        id="mouse-over-popover"
-        className={classes.popover}
-        classes={{
-          paper: classes.paper,
-        }}
-        open={open}
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
-        }}
-        onClose={handlePopoverClose}
-        disableRestoreFocus
-      >
-        <Typography>{tile.about}</Typography>
-      </Popover>
-          </GridListTile>
+          <LightTooltip className={classes.tooltip} title={tile.about}>
+            <GridListTile key={tile.img}>
+              <img src={tile.img} alt={tile.title} />
+
+              <GridListTileBar
+                title={tile.title}
+                subtitle={<span>About: {tile.about}</span>}
+                actionIcon={
+                  <>
+                    <a href={tile.url} target="_blank" rel="noreferrer" >
+                      <IconButton
+                        aria-label={`Go to website for ${tile.title}`}
+                        className={classes.icon}
+                      >
+                        <ExitToAppIcon />
+                      </IconButton>
+                    </a>
+                    <a href={tile.git} target="_blank" rel="noreferrer" >
+                      <IconButton
+                        aria-label={`Git for ${tile.title}`}
+                        className={classes.icon}
+                      >
+                        <GitHubIcon />
+                      </IconButton>
+                    </a>
+                  </>
+                }
+              />
+            </GridListTile>
+          </LightTooltip>
         ))}
       </GridList>
     </div>
