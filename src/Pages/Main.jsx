@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Ubuntu",
     background: "#F5F5EF",
     margin: "auto",
-    zindex: "1",
+   
   },
   paperbodydetail: {
     padding: theme.spacing(2),
@@ -117,9 +117,9 @@ const Home = () => {
               <Grid item xs={12} sm={6}>
                 <Slide direction="left" in={true} timeout={800}>
                   <Paper className={classes.paperbody}>
+                    
                     <h4 class="wordCarousel">
                       <div>
-                        {/* <!-- Use classes 2,3, or 4 to match the number of words --> */}
                         <ul class="flip4">
                           <li>Frontend</li>
                           <li>Backend</li>
