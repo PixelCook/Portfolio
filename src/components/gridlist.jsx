@@ -43,10 +43,10 @@ export default function TitleGridList() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList}>
+      <GridList cellHeight={200} className={classes.gridList}  >
         <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div">Recent Projects</ListSubheader>
-        </GridListTile>
+        </GridListTile >
         {tileData.map((tile) => (
           <LightTooltip className={classes.tooltip} title={tile.about}>
             <GridListTile key={tile.img}>

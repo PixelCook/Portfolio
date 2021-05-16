@@ -95,6 +95,7 @@ const Home = () => {
     if (!showDiv3) setShowDiv3(true);
   };
 
+
   return (
     <>
       <Navbar />
