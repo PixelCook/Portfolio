@@ -121,6 +121,7 @@ const Home = () => {
         </div>
 
         <div class='wrap'>
+          <div>
   <div class='c'></div>
   <div class='c'></div>
   <div class='c'></div>
@@ -265,7 +266,7 @@ const Home = () => {
   <div class='c'></div>
   <div class='c'></div>
   <div class='c'></div>
-
+  </div>
 
         <div className={`center ${classes.root}`}>
           <Grid container justify="center" spacing={3}>

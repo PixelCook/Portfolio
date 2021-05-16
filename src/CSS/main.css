@@ -47,12 +47,12 @@ body{
 }
 
 
-/* 
+
 @media only screen and (min-width: 768px){  
   
   .wrap {
     position: relative;
-    padding-top: 45vh;
+    padding-top: 30rem;
     background: black;
     z-index: 1;
   }
@@ -1380,4 +1380,4 @@ body{
       opacity: 0;
     }
   }
-} */
+}
