@@ -356,6 +356,12 @@ const Home = () => {
                           >
                             GitHub
                           </a>
+                          <a
+                            className="contact"
+                            href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
+                          >
+                            Resume
+                          </a>
                         </h2>
                         <br></br>
                       </p>
