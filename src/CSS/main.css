@@ -29,25 +29,28 @@ body{
     margin: 0;
 }
 .tagger{
-    margin-bottom: 1rem !important;
-    
+    margin-bottom: 1rem !important;   
 }
 
-.contact{
-    display: block;
+.contact-span {
+    text-align: center;
+}
+
+.contacted{
     color: black !important; 
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    
 }
 
-.contact:hover {
+.contacted:hover {
     color: rgb(88, 87, 139) !important; 
 } 
 
 
-.contact:visited{
-    color: rgb(109, 109, 109) !important; 
+.contacted:visited{
+    color: rgb(109, 109, 109); 
 }
 
 

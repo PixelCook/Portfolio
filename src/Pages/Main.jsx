@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Ubuntu",
     background: "#F5F5EF",
     margin: "auto",
-   
   },
   paperbodydetail: {
     padding: theme.spacing(2),
@@ -122,10 +121,9 @@ const Home = () => {
                   </Paper>
                 </Slide>
               </Grid>
-              <Grid item xs={12} sm={6} >
-                <Slide direction="left" in={true} timeout={800} >
-                  <Paper className= {classes.tagger} >
-                    
+              <Grid item xs={12} sm={6}>
+                <Slide direction="left" in={true} timeout={800}>
+                  <Paper className={classes.tagger}>
                     <h4 class="wordCarousel">
                       <div>
                         <ul class="flip4">
@@ -343,22 +341,25 @@ const Home = () => {
                         <a href="mailto:zacharyigould@gmail.com">
                           zacharyigould@gmail.com
                         </a>
-                        <h2>
+                        <h2 className="contact-span">
                           <a
-                            className="contact"
+                            className="contacted"
                             href="https://www.linkedin.com/in/zacharygo/"
+                            target="_blank"
                           >
                             LinkedIn
                           </a>
                           <a
-                            className="contact"
+                            className="contacted"
                             href="https://github.com/PixelCook"
+                            target="_blank"
                           >
                             GitHub
                           </a>
                           <a
-                            className="contact"
+                            className="contacted"
                             href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
+                            target="_blank"
                           >
                             Resume
                           </a>
