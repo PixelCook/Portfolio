@@ -45,7 +45,9 @@ body{
 .contact:visited{
     color: rgb(109, 109, 109) !important; 
 }
-  
+
+
+/* 
 @media only screen and (min-width: 768px){  
   
   .wrap {
@@ -1378,4 +1380,4 @@ body{
       opacity: 0;
     }
   }
-}
+} */

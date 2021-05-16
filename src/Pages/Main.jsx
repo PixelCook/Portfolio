@@ -8,7 +8,7 @@ import { Avatar, Button } from "@material-ui/core";
 import Gridlist from "../components/gridlist";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
-import homebackground from "../backgrounds/beach.svg";
+import homebackground from "../backgrounds/beach.png";
 import profile from "../backgrounds/avatar.jpeg";
 
 const mountedStyle = {
