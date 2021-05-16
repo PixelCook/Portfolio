@@ -28,6 +28,10 @@ body{
     padding: 0;
     margin: 0;
 }
+.tagger{
+    margin-bottom: 1rem !important;
+    
+}
 
 .contact{
     display: block;

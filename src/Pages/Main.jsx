@@ -41,6 +41,14 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     background: "#F5F5EF",
   },
+  tagger: {
+    padding: "1px 3px",
+    textAlign: "center",
+    color: "#000000",
+    fontFamily: "Ubuntu",
+    margin: "auto",
+    background: "#F5F5EF",
+  },
   papertitle: {
     padding: theme.spacing(2),
     textAlign: "center",
@@ -97,7 +105,7 @@ const Home = () => {
           style={{
             backgroundImage: `url(${homebackground})`,
             backgroundRepeat: "no-repeat",
-            height: "85vh",
+            height: "90vh",
             backgroundSize: "cover",
             backgroundposition: "center",
             position: "relative",
@@ -114,9 +122,9 @@ const Home = () => {
                   </Paper>
                 </Slide>
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <Slide direction="left" in={true} timeout={800}>
-                  <Paper className={classes.paperbody}>
+              <Grid item xs={12} sm={6} >
+                <Slide direction="left" in={true} timeout={800} >
+                  <Paper className= {classes.tagger} >
                     
                     <h4 class="wordCarousel">
                       <div>
