@@ -9,7 +9,7 @@ import Gridlist from "../components/gridlist";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
 import homebackground from "../backgrounds/beach.png";
-import profile from "../backgrounds/avatar.jpeg";
+import profile from "../backgrounds/avatar.png";
 
 const mountedStyle = {
   animation: "inAnimation 250ms ease-in",
@@ -127,10 +127,10 @@ const Home = () => {
                     <h4 class="wordCarousel">
                       <div>
                         <ul class="flip4">
-                          <li>Frontend</li>
-                          <li>Backend</li>
-                          <li>Fullstack</li>
-                          <li>Developer</li>
+                          <li>FRONTEND</li>
+                          <li>BACKEND</li>
+                          <li>FULLSTACK</li>
+                          <li>DEVELOPER</li>
                         </ul>
                       </div>
                     </h4>
@@ -346,6 +346,7 @@ const Home = () => {
                             className="contacted"
                             href="https://www.linkedin.com/in/zacharygo/"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             LinkedIn
                           </a>
@@ -353,6 +354,7 @@ const Home = () => {
                             className="contacted"
                             href="https://github.com/PixelCook"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             GitHub
                           </a>
@@ -360,6 +362,7 @@ const Home = () => {
                             className="contacted"
                             href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
                             target="_blank"
+                            rel="noreferrer"
                           >
                             Resume
                           </a>
