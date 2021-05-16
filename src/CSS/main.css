@@ -1,3 +1,4 @@
+
 .center-text{
     padding-top: 15% !important;
     padding-bottom: 25%;
@@ -5,10 +6,12 @@
 }
 
 .center {
-    padding-top: 10% !important;   
+    padding-top: 10% !important;
+    background-color: #000000 ;   
 }
 
 .main div{
+    
     scroll-snap-type: x mandatory;
     scroll-padding-top: 10vh;
 }
@@ -23,8 +26,18 @@
 }
 
 .contact{
-    
-    display: flex;
-    justify-content: center;
-    
+    display: block;
+    color: black !important; 
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contact:hover {
+    color: rgb(88, 87, 139) !important; 
+} 
+
+
+.contact:visited{
+    color: rgb(109, 109, 109) !important; 
 }
