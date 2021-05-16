@@ -1,6 +1,6 @@
 
 body{
-    background: black;
+    background: rgb(10, 10, 10);
 }
 
 .center-text{
@@ -48,7 +48,7 @@ body{
 
 
 
-@media only screen and (min-width: 768px){  
+ @media only screen and (min-width: 768px){   
   
   .wrap {
     position: relative;
@@ -63,6 +63,7 @@ body{
     width: 0.69444%;
     margin-top: -400px;
     animation: drop 4s infinite ease-in;
+    opacity: .2;
   }
   .c:after {
     content: "";
@@ -1380,4 +1381,4 @@ body{
       opacity: 0;
     }
   }
-}
+} 

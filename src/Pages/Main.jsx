@@ -56,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     alignContent: "center",
   },
+  buttonmain: {
+    width: "100%",
+  }
 }));
 
 const Home = () => {
@@ -271,7 +274,7 @@ const Home = () => {
         <div className={`center ${classes.root}`}>
           <Grid container justify="center" spacing={3}>
             <Grid item xs={12} sm={7}>
-              <Button onClick={handleClick1}>
+              <Button onClick={handleClick1} className={classes.buttonmain}>
                 <Paper className={classes.papertitle} id="about">
                   ABOUT ME
                 </Paper>
@@ -347,7 +350,7 @@ const Home = () => {
           <Grid container justify="center" spacing={3}>
             <Grid item xs={12} sm={7}>
               <Button
-                className={`main-button ${classes.button} `}
+                className={classes.buttonmain}
                 onClick={handleClick2}
               >
                 <Paper className={classes.papertitle} id="skills">
@@ -439,7 +442,7 @@ const Home = () => {
         <div className={`center ${classes.root}`}>
           <Grid container justify="center" spacing={3}>
             <Grid item xs={12} sm={7}>
-              <Button onClick={handleClick3}>
+              <Button onClick={handleClick3} className={classes.buttonmain}>
                 <Paper className={classes.papertitle} id="portfolio">
                   PORTFOLIO
                 </Paper>
