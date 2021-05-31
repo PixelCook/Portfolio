@@ -8,7 +8,7 @@ import { Avatar, Button } from "@material-ui/core";
 import Gridlist from "../components/gridlist";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
-import homebackground from "../backgrounds/beach.png";
+import homebackground from "../backgrounds/beach.jpg";
 import profile from "../backgrounds/avatar.png";
 
 const mountedStyle = {
@@ -94,7 +94,6 @@ const Home = () => {
     setIsMounted3(!isMounted3);
     if (!showDiv3) setShowDiv3(true);
   };
-
 
   return (
     <>
