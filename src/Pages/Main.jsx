@@ -289,92 +289,7 @@ const Home = () => {
             <div class="c"></div>
           </div>
 
-          <div className={`center ${classes.root}`}>
-            <Grid container justify="center" spacing={3}>
-              <Grid item xs={12} sm={7}>
-                <Button onClick={handleClick1} className={classes.buttonmain}>
-                  <Paper className={classes.papertitle} id="about">
-                    ABOUT ME
-                  </Paper>
-                </Button>
-              </Grid>
-
-              <Grid item xs={10} sm={7}>
-                {showDiv && (
-                  <div
-                    className="transitionDiv"
-                    style={isMounted ? mountedStyle : unmountedStyle}
-                    onAnimationEnd={() => {
-                      if (!isMounted) setShowDiv(false);
-                    }}
-                  >
-                    <Paper className={classes.paperbodydetail}>
-                      <p>
-                        🔥 As a Full Stack Developer I work to:<br></br>
-                        👾 Create memorable and original products that not only
-                        aesthetically look amazing but are secure and
-                        functionally exceptional<br></br>
-                        👾 Constantly create, produce, and push the envelope on
-                        what can be done in development<br></br>
-                        👾 Participate and promote a developer community,
-                        leaving the world a little more connected than I found
-                        it<br></br> <br></br>
-                        After 6+ years of building and developing my own company
-                        I have taken the skills and talents that I built in a
-                        production environment and turned my sights on
-                        development.
-                        <br></br>I learned a lot during my years as an owner and
-                        managing partner. How to create a brand and a voice. How
-                        to dive into a complicated technical world and become an
-                        expert in the field. How to stay self-motivated and
-                        organized. How to work under pressure and multi-task,
-                        but most importantly, how to effectively turn creative
-                        ideas into real world solutions.
-                        <br></br>
-                        After managing a team of 15 and making something that
-                        most thought was impossible, I set my vision on my first
-                        passion of working in tech; innovative, efficient, and
-                        captivating.
-                        <br></br>
-                        👉 If you're interested in working with me to help make
-                        your vision a reality email me at
-                        <a href="mailto:zacharyigould@gmail.com">
-                          zacharyigould@gmail.com
-                        </a>
-                        <h2 className="contact-span">
-                          <a
-                            className="contacted"
-                            href="https://www.linkedin.com/in/zacharygo/"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            LinkedIn
-                          </a>
-                          <a
-                            className="contacted"
-                            href="https://github.com/PixelCook"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            GitHub
-                          </a>
-                          <a
-                            className="contacted"
-                            href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Resume
-                          </a>
-                        </h2>
-                        <br></br>
-                      </p>
-                    </Paper>
-                  </div>
-                )}
-              </Grid>
-            </Grid>
-          </div>
+          
 
           <div className={`center ${classes.root}`}>
             <Grid container justify="center" spacing={3}>
@@ -487,6 +402,92 @@ const Home = () => {
                   >
                     <Paper className={classes.paperbodydetail}>
                       <Gridlist />
+                    </Paper>
+                  </div>
+                )}
+              </Grid>
+            </Grid>
+          </div>
+          <div className={`center ${classes.root}`}>
+            <Grid container justify="center" spacing={3}>
+              <Grid item xs={12} sm={7}>
+                <Button onClick={handleClick1} className={classes.buttonmain}>
+                  <Paper className={classes.papertitle} id="about">
+                    ABOUT ME
+                  </Paper>
+                </Button>
+              </Grid>
+
+              <Grid item xs={10} sm={7}>
+                {showDiv && (
+                  <div
+                    className="transitionDiv"
+                    style={isMounted ? mountedStyle : unmountedStyle}
+                    onAnimationEnd={() => {
+                      if (!isMounted) setShowDiv(false);
+                    }}
+                  >
+                    <Paper className={classes.paperbodydetail}>
+                      <p>
+                        🔥 As a Full Stack Developer I work to:<br></br>
+                        👾 Create memorable and original products that not only
+                        aesthetically look amazing but are secure and
+                        functionally exceptional<br></br>
+                        👾 Constantly create, produce, and push the envelope on
+                        what can be done in development<br></br>
+                        👾 Participate and promote a developer community,
+                        leaving the world a little more connected than I found
+                        it<br></br> <br></br>
+                        After 6+ years of building and developing my own company
+                        I have taken the skills and talents that I built in a
+                        production environment and turned my sights on
+                        development.
+                        <br></br>I learned a lot during my years as an owner and
+                        managing partner. How to create a brand and a voice. How
+                        to dive into a complicated technical world and become an
+                        expert in the field. How to stay self-motivated and
+                        organized. How to work under pressure and multi-task,
+                        but most importantly, how to effectively turn creative
+                        ideas into real world solutions.
+                        <br></br>
+                        After managing a team of 15 and making something that
+                        most thought was impossible, I set my vision on my first
+                        passion of working in tech; innovative, efficient, and
+                        captivating.
+                        <br></br>
+                        👉 If you're interested in working with me to help make
+                        your vision a reality email me at
+                        <a href="mailto:zacharyigould@gmail.com">
+                          zacharyigould@gmail.com
+                        </a>
+                        <h2 className="contact-span">
+                          <a
+                            className="contacted"
+                            href="https://www.linkedin.com/in/zacharygo/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            LinkedIn
+                          </a>
+                          <a
+                            className="contacted"
+                            href="https://github.com/PixelCook"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            GitHub
+                          </a>
+                          <a
+                            className="contacted"
+                            href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Resume
+                          </a>
+                        </h2>
+                        <br></br>
+                      </p>
                     </Paper>
                   </div>
                 )}
