@@ -12,7 +12,7 @@ const tileData = [
     title: "Stock App",
     about:
       "Vanilla JS, CSS and HTML were used to access an api and present the user with topical news articles, current stock prices, and even allow the user to search stocks by name and convert their prices historically into an interactive graph.",
-    url: "https://app.netlify.com/sites/gracious-benz-06b692/overview",
+    url: "https://gracious-benz-06b692.netlify.app/",
     git: "https://github.com/PixelCook/StockAPI",
   },
   {
