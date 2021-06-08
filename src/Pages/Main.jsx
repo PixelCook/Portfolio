@@ -11,6 +11,7 @@ import "../CSS/main.css";
 import homebackground from "../backgrounds/beach.jpg";
 import profile from "../backgrounds/avatar.png";
 import Particles from "react-particles-js";
+import resume from "../data/resume.pdf";
 
 const mountedStyle = {
   animation: "inAnimation 250ms ease-in",
@@ -144,7 +145,6 @@ const Home = () => {
 
         <Particles
           className="particles"
-         
           params={{
             particles: {
               number: {
@@ -352,7 +352,7 @@ const Home = () => {
                         </a>
                         <a
                           className="contacted"
-                          href="https://docs.google.com/document/d/1RqcRkGs5WQhaDpJzGzLYY1cIoV31ngLs0ML4vGvsJ20/edit?usp=sharing"
+                          href={resume}
                           target="_blank"
                           rel="noreferrer"
                         >

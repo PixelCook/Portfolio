@@ -6,6 +6,8 @@ import khamsa from "../backgrounds/khamsa.svg";
 import IconButton from "@material-ui/core/IconButton";
 import { HashLink } from "react-router-hash-link";
 import "../CSS/navbar.css";
+import resume from "../data/resume.pdf";
+import { Link } from "react-router-dom";
 
 const mountedStyle = {
   animation: "inAnimation 250ms ease-in",
@@ -30,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
   const classes = useStyles();
-  const [isMounted, setIsMounted] = useState(false);
-  const [showDiv, setShowDiv] = useState(false);
+  const [isMounted, setIsMounted] = useState(true);
+  const [showDiv, setShowDiv] = useState(true);
 
   const handleClick = () => {
     setIsMounted(!isMounted);
@@ -69,6 +71,9 @@ export default function Navbar() {
                 <HashLink smooth to={"#portfolio"}>
                   <li>PORTFOLIO</li>
                 </HashLink>
+                <a href={resume} target="_blank">
+                  <li>RESUME</li>
+                </a>
               </ul>
             </div>
           )}
