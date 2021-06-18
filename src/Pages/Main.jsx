@@ -24,7 +24,7 @@ const unmountedStyle = {
 const particlesOptions = {
   particles: {
     number: {
-      value: 80,
+      value: 100,
       density: {
         enable: true,
         value_area: 800,
@@ -65,13 +65,13 @@ const particlesOptions = {
       distance: 150,
       color: "#f716ff73",
       opacity: 0.4,
-      width: 1,
+      width: .5,
     },
     move: {
       enable: true,
       speed: 1,
       direction: "none",
-      random: true,
+      random: false,
       straight: false,
       out_mode: "bounce",
       bounce: false,
