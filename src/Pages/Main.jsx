@@ -21,6 +21,94 @@ const unmountedStyle = {
   animationFillMode: "forwards",
 };
 
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    color: {
+      value: ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"],
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#b6b2b2",
+      },
+    },
+    opacity: {
+      value: 0.5211089197812949,
+      random: false,
+      anim: {
+        enable: true,
+        speed: 1,
+        opacity_min: 0.1,
+        sync: false,
+      },
+    },
+    size: {
+      value: 8.017060304327615,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 12.181158184520175,
+        size_min: 0.1,
+        sync: true,
+      },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#f716ff73",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "bounce",
+      bounce: false,
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
+    },
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab",
+      },
+      resize: true,
+    },
+    modes: {
+      grab: {
+        distance: 200,
+        line_linked: {
+          opacity: 1,
+        },
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.4,
+      },
+      push: {
+        particles_nb: 1,
+      },
+    },
+  },
+  retina_detect: true,
+};
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -143,27 +231,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Particles
-          className="particles"
-          params={{
-            particles: {
-              number: {
-                value: 150,
-                density: {
-                  enable: true,
-                  value_area: 1000,
-                },
-              },
-              polygon: {
-                enable: false,
-                type: "inside",
-                move: {
-                  radius: 5,
-                },
-              },
-            },
-          }}
-        />
+        <Particles className="particles" params={particlesOptions} />
         <div className={`center ${classes.root}`}>
           <Grid container justify="center" spacing={3}>
             <Grid item xs={12} sm={7}>
