@@ -1,5 +1,13 @@
 const tileData = [
   {
+    img: "/images/vize.png",
+    title: "Vize",
+    about:
+      "React, NodeJS, MongoDB, CSS, and HTML were used to create a college advisement app. I was the exclusive frontend developer for this project.",
+    url: "http://vize-web-app-sandbox.us-east-2.elasticbeanstalk.com/login",
+    git: "https://github.com/PixelCook",
+  },
+  {
     img: "/images/house.jpg",
     title: "House Party",
     about:
