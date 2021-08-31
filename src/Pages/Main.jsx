@@ -65,7 +65,7 @@ const particlesOptions = {
       distance: 150,
       color: "#f716ff73",
       opacity: 0.4,
-      width: .5,
+      width: 0.5,
     },
     move: {
       enable: true,
@@ -161,14 +161,14 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
 
-  const [isMounted, setIsMounted] = useState(false);
-  const [showDiv, setShowDiv] = useState(false);
+  const [isMounted, setIsMounted] = useState(true);
+  const [showDiv, setShowDiv] = useState(true);
 
-  const [isMounted2, setIsMounted2] = useState(false);
-  const [showDiv2, setShowDiv2] = useState(false);
+  const [isMounted2, setIsMounted2] = useState(true);
+  const [showDiv2, setShowDiv2] = useState(true);
 
-  const [isMounted3, setIsMounted3] = useState(false);
-  const [showDiv3, setShowDiv3] = useState(false);
+  const [isMounted3, setIsMounted3] = useState(true);
+  const [showDiv3, setShowDiv3] = useState(true);
 
   const handleClick1 = () => {
     setIsMounted(!isMounted);
