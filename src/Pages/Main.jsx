@@ -332,7 +332,7 @@ const Home = () => {
               </Button>
             </Grid>
 
-            <Grid item xs={10} sm={7}>
+            <Grid item xs={12} sm={7}>
               {showDiv3 && (
                 <div
                   className="transitionDiv"
@@ -359,7 +359,7 @@ const Home = () => {
               </Button>
             </Grid>
 
-            <Grid item xs={10} sm={7}>
+            <Grid item xs={12} sm={7}>
               {showDiv && (
                 <div
                   className="transitionDiv"

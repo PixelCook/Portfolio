@@ -15,11 +15,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    overflow: "scroll",
+    overflow: "auto",
     backgroundColor: "#F5F5EF",
   },
   gridList: {
-    width: 500,
+    width: "90%",
     height: 450,
   },
   icon: {
