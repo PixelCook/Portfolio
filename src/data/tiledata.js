@@ -1,5 +1,12 @@
 const tileData = [
   {
+    img: "/images/starwars.png",
+    title: "StarWars",
+    about: "A quick React 1 page utilizing Star Wars API. Design and modular functions dealing with streamlined state.",
+    url: "https://pensive-spence-d11d47.netlify.app/",
+    git: "https://github.com/PixelCook/Zoomin",
+  },
+  {
     img: "/images/vize.png",
     title: "Vize",
     about:
