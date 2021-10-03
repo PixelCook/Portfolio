@@ -206,7 +206,7 @@ const Home = () => {
                 <Slide direction="right" in={true} timeout={800}>
                   <Paper className={classes.papertitle}>
                     ZACHARY GOULD
-                    <Avatar className={classes.large} src="https://res.cloudinary.com/ziggysmalls/image/upload/v1633217656/vntpofjkhq8cqedrcbxr.jpg"></Avatar>
+                    <Avatar alt="profile" className={classes.large} src="https://res.cloudinary.com/ziggysmalls/image/upload/c_fit,h_277,q_auto/v1633217656/vntpofjkhq8cqedrcbxr.jpg"></Avatar>
                   </Paper>
                 </Slide>
               </Grid>
