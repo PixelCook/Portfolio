@@ -8,7 +8,6 @@ import { Avatar, Button } from "@material-ui/core";
 import Gridlist from "../components/gridlist";
 import "../CSS/fonts.css";
 import "../CSS/main.css";
-import homebackground from "../backgrounds/beach.jpg";
 import profile from "../backgrounds/avatar.png";
 import Particles from "react-particles-js";
 import resume from "../data/resume.pdf";
@@ -192,7 +191,7 @@ const Home = () => {
         <div
           className="background"
           style={{
-            backgroundImage: `url(${homebackground})`,
+            backgroundImage: `url(https://res.cloudinary.com/ziggysmalls/image/upload/q_auto,f_auto/v1633217648/bumxpowzfdaxy48aocav.png)`,
             backgroundRepeat: "no-repeat",
             height: "90vh",
             backgroundSize: "cover",
@@ -214,9 +213,9 @@ const Home = () => {
               <Grid item xs={12} sm={6}>
                 <Slide direction="left" in={true} timeout={800}>
                   <Paper className={classes.tagger}>
-                    <h4 class="wordCarousel">
+                    <h4 className="wordCarousel">
                       <div>
-                        <ul class="flip4">
+                        <ul className="flip4">
                           <li>FRONTEND</li>
                           <li>BACKEND</li>
                           <li>FULLSTACK</li>
@@ -401,6 +400,7 @@ const Home = () => {
                       <a href="mailto:zacharyigould@gmail.com">
                         zacharyigould@gmail.com
                       </a>
+                      </p>
                       <h2 className="contact-span">
                         <a
                           className="contacted"
@@ -428,7 +428,7 @@ const Home = () => {
                         </a>
                       </h2>
                       <br></br>
-                    </p>
+                    
                   </Paper>
                 </div>
               )}

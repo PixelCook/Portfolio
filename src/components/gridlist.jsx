@@ -48,8 +48,8 @@ export default function TitleGridList() {
           <ListSubheader component="div">Recent Projects</ListSubheader>
         </GridListTile >
         {tileData.map((tile) => (
-          <LightTooltip className={classes.tooltip} title={tile.about}>
-            <GridListTile key={tile.img}>
+          <LightTooltip key={tile.img} className={classes.tooltip} title={tile.about}>
+            <GridListTile >
               <img src={tile.img} alt={tile.title} />
 
               <GridListTileBar

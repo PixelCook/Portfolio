@@ -7,7 +7,6 @@ import IconButton from "@material-ui/core/IconButton";
 import { HashLink } from "react-router-hash-link";
 import "../CSS/navbar.css";
 import resume from "../data/resume.pdf";
-import { Link } from "react-router-dom";
 
 const mountedStyle = {
   animation: "inAnimation 250ms ease-in",
@@ -42,7 +41,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="start">
+      <AppBar position="static">
         <Toolbar>
           <IconButton
             edge="start"
